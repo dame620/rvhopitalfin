@@ -1,0 +1,836 @@
+//sets
+
+$success__primary: #3DC480;
+$success__secondary: #B8BABB;
+$color_primary: #2c9bdb;
+
+.modal-full {
+
+  min-width: 95%;
+  margin: auto;
+}
+
+.modal-full .modal-content {
+  min-height: 100vh;
+}
+.right {
+  float: right;
+  position: relative;
+  top: 6px;
+}
+
+.top {
+  margin-top: -30px;
+}
+
+
+
+#notebooks {
+  background: whitesmoke;
+  position: relative;
+  
+  margin-top: 5px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 0 white;
+  max-height: 270px;
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    max-height: 210px;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 5px 0 5px;
+    border-left: none;
+    border-right: none;
+  }
+  
+  li {
+    list-style: none;
+    transition: background-color .5s ;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-image: 
+      linear-gradient(
+        90deg,
+        #FFD32E 10px,
+        #EEE 10px,
+        #EEE 11px,
+        transparent 11px);
+    padding: 10px 15px 10px 25px;
+    border: 1px solid #CCC;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 3px;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.301);
+    }
+  }
+}
+
+
+
+#query {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 19px;
+  padding: 5px;
+  font-family: calibri light;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  &
+:focus {
+   border: 1px solid #FFD32E;
+   box-shadow: 0 0 10px rgba(255, 255, 0, 0.1);
+   outline: none;
+ }
+}
+
+
+
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.modal-body{
+  background-color: #ebebeb;
+  min-height: 640px;
+
+}
+.text-primary{
+  font-size: 36px;
+}
+.profile{
+  width: 42px;
+  height: 42px;
+}
+.btn-outline-primary,.btn-outline-danger{
+  
+    &:hover{
+      .fa{
+        color: #fff;
+      }
+     
+    }
+  
+}
+.fa-close{
+  font-size: 20px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.header{
+  padding: .8em;
+   width: 100%;
+   font-size: 22px;
+   font-weight: bold;
+   color: #fff;
+   background-color: #2c9bdb;
+  .fa
+  {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+p{
+  font-size: 18px!important;
+}
+#side-menu-container{
+  height: 100vh;
+}
+
+.main-content{
+  margin-top: -2em;
+}
+header {
+  nav {
+    position: fixed !important;
+    background-color: #fff;
+    top:0;
+    width: 100%;
+    z-index: 130;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.inactive-date{
+background-color:red !important;
+cursor: none ;
+}
+
+.active-date{
+  background-color: #40aff0;
+  &:hover {
+    background-color: #2c9bdb;
+  }
+  cursor: pointer !important;
+}
+.selected-date{
+  background-color: #09ad3b;
+  &:hover{
+    background-color: #09ad3b !important;
+  }
+}
+
+.selected-nav{
+
+  background-color: #2c9bdb;
+  
+}
+
+.top-nav{
+  position: absolute;
+  
+  background-color: #40aff0;
+  width: 60%;
+  height: 100vh;
+  z-index: 180;
+  top: 0;
+  right: 0;
+  padding: 2em;
+  ul{
+   
+      .help{
+        margin-left: .5em;
+       
+      }
+    
+  }
+  span,a{
+    color: #fff;
+    font-size: 18px;
+  }
+}
+.add-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+  transition: background-color 0.05s ease-out;
+  background-color: #40aff0;
+  padding: 0.8em;
+  text-decoration: none;
+  text-align: center;
+  span {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 0.2em;
+  }
+  &:hover {
+    background-color: #2c9bdb;
+  }
+}
+#humberger-menu{
+  margin-right: -60%;
+  display: none;
+}
+.active-day {
+  background-color: #09ad3b !important;
+  border: 1px solid red !important;
+}
+.hide {
+  display: none ;
+}
+.hide-icon{
+  display: none !important;
+
+}
+
+.fa{
+  color: #40aff0;
+}
+
+
+.passed-date{
+  background-color: #ff9823;
+}
+
+
+
+.banner {
+
+  position: relative;
+  top: 0;
+  left: 0;
+  max-height: 85px;
+  padding: 1em;
+  background: #536976;
+  background: -webkit-linear-gradient(to right, #292e49, #536976);
+  background: linear-gradient(to right, #292e49, #536976);
+
+  .img-box-1 {
+    color:#fff;
+    float: left;
+  }
+  .img-box-2 {
+    float: right;
+    img{
+      width: 40%;
+      
+    }
+  }
+}
+.doctor-infos{
+  background-color: #fff;
+  font-size: .8em;
+  padding-left: 2em;
+  span{
+   display: block;
+   line-height: 1.2em;
+  }
+
+}
+.main-info {
+  margin-top: 2em;
+  .fa {
+    font-size: 46px;
+    color: rgb(219, 217, 217);
+  }
+  .patient-info,
+  .doctor-info,
+  .speciality-info {
+    padding: 2em;
+    color: rgb(219, 217, 217);
+    .title {
+      font-size: 26px;
+      vertical-align: top;
+      font-weight: bold;
+      margin-left: 1em;
+    }
+  }
+
+  .info-value {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+  }
+}
+#menu-close{
+  display: block;
+  position: relative;
+  width: 40px;
+  top:-1.4em;
+  right: -95%;
+ font-size: 36px;
+}
+
+.time {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  display: inline-block;
+
+  span {
+    color: rgb(246, 115, 115);
+  }
+}
+#fined-patient
+{
+  max-height: 240px;
+  overflow-y: scroll;
+  .patient-item,.patient-item-search{
+    padding: .4em;
+    margin-bottom: 2px;
+    transition: background-color .5s ease-out;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  &:hover{
+    background-color: #92d2f7;
+  }
+
+  }
+  
+}
+.selected-patient{
+  background-color: #92d2f7 !important;
+}
+.patient-details{
+  background-color: #f8f8f8;
+  max-height: 240px;
+  &::before{
+    content: "";
+  }
+  .patientProfile{
+    border: 2px solid #fff;
+    text-align: center;
+
+    img{
+      width: 95%;
+      height: 95%;
+    }
+   
+  }
+}
+
+/***********************************SIDE MENU*******************************************/
+
+
+.side-nav{
+  .title{
+    font-size: 16px;
+    color: #fff;
+  }
+  background-color: #40aff0;
+  padding: .5em 0;
+  ul{
+    margin-top: 80%;
+    li{
+      margin-top: 1em;
+      .fa{
+        font-size: 36px;
+        color: #fff;
+
+      }
+      &>a,.dropright{
+        .dropdown-menu{
+          .fa{
+            font-size: 12px;
+          }
+        }
+        
+        transition: background-color 0.5s ease-out;
+
+        padding: .2em 0;
+        text-align: center;
+        display: block;
+        &:hover{
+          background-color: #2c9bdb;
+          text-decoration: none;
+
+        }
+      }
+     
+    }
+  }
+}
+.selected-spec{
+  background-color: #40aff0 !important;
+}
+.speciality{
+  background-color: #e8f6fa;
+  padding: .5em;
+  height: calc(100vh - 240px);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: .5em;
+  }
+  
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  }
+  .speciality-item{
+    transition: background-color 0.5s ease-out;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-color: rgb(243, 243, 243);
+    padding-bottom: .3em;
+    margin-bottom: .3em;
+    
+    cursor: pointer;
+    &:hover{
+      background-color: #40aff0;
+    }
+
+    .doctor-item{
+      padding: .3em;
+      background-color: #fff;
+      
+    }
+    
+  }
+  .speciality-name{
+    padding: .8em;
+  
+
+    font-weight: bold;
+  }
+}
+
+
+div#calendar {
+  margin: 0px auto;
+  padding: 0px;
+  width: 100%;
+  font-family: Helvetica, "Times New Roman", Times, serif;
+  background-color: #ffffff;
+
+
+}
+
+div#calendar div.box {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  color: rgb(190, 190, 190);
+  font-weight: bold;
+}
+
+
+/*******************************Calendar Content Cells*********************************/
+div#calendar div.box-content {
+  border-top: none;
+}
+
+div#calendar ul{
+  width: 100%;
+}
+
+div#calendar ul.label {
+  float: left;
+  margin: 0px;
+  margin-top: -10px;
+  margin-left: 5px;
+  padding-bottom: .4em;
+}
+
+div#calendar ul.label li {
+  margin: 0px;
+  padding: 0px;
+  margin-right: 3px;
+  float: left;
+  list-style-type: none;
+  width: 13%;
+  height: 15px;
+  line-height: 280%;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(245, 125, 46);
+  font-size: 12px;
+  background-color: transparent;
+}
+
+div#calendar ul.dates {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+/** overall width = width+padding-right**/
+div#calendar ul.dates li {
+  margin: 0px;
+  padding: 0px;
+  margin-right: 3px;
+  margin-top: 3px;
+  line-height: 240%;
+  vertical-align: middle;
+  float: left;
+  list-style-type: none;
+  width: 13%;
+  height: 11%;
+  font-size: 16px;
+  transition: background-color 0.5s ease-out;
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+}
+
+:focus {
+  outline: none;
+}
+
+div.clear {
+  clear: both;
+}
+
+
+
+/*******************************LOGIN*********************************/
+.login-page{
+  background-image: url('../img/bg/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  .cover{
+    position: absolute;
+    background-color: #00000086;
+    width: 100%;
+  height: 100%;
+  }
+  .wellcome-text{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 14%;
+    left: 28%;
+    h1{
+      font-weight: bolder;
+      font-size: 5em;
+      color: rgb(51, 193, 236);
+    }
+    h5{
+      color: #fff;
+    }
+  }
+  
+  .login-panel{
+    .fa{
+      font-size: 42px;
+      color: #faa341;
+    }
+    position: absolute;
+    margin-top: 8%;
+    padding: 2em;
+    background-color: #fff;
+    z-index: 180;
+  }
+  
+}
+
+/*************************Message Flash*******************************/
+
+
+
+.success-flash {
+    text-align: center;
+    position: relative;
+    padding: 2em;
+    position: relative;
+    margin-top: 12%;
+    margin-left: 38%;
+    width: 25%;
+    background-color:#fff;
+    
+}
+
+.success-flash__icon {
+    max-width: 75px;
+}
+
+
+
+
+.success-flash__content {
+    color: $success__secondary;
+    transform: translateY(25px);
+    opacity: 1;
+    transition: all 200ms ease;
+    transition-delay: 50ms;
+    
+    .active & {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.icon-checkmark {
+    circle {
+        fill: $success__primary;
+        transform-origin: 50% 50%;
+        transition: transform 200ms cubic-bezier(.22, .96, .38, .98);
+    }
+    path {
+        transition: stroke-dashoffset 350ms ease;
+        transition-delay: 100ms;
+    }
+    
+    
+}
+
+/*****************************PATIENT LIST PANEL*******************/
+
+.patient-list-panel {
+
+  .patient-item{
+    background-color:white;
+    cursor: pointer;
+    &:hover{
+      background-color: rgb(160, 235, 253);
+    }
+  }
+
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+  border-radius: 4px;
+  font-size: .7em;
+  &::-webkit-scrollbar {
+    width: .5em;
+  }
+  
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  }
+  .fa{
+  font-size: .9em;
+
+  }
+ 
+}
+/*******************LOADING*************************/
+
+#loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/********************************TIME AVAILABLE********************/
+.activate-panel{
+  background-color: #ecece9b4;
+  pointer-events: none;
+  opacity: 0.4;
+  
+}
+.active-time{
+   transition: background-color .2s ease-out;
+   background-color: #5fdbf1b0;
+   &:hover{
+      background-color: #257583b0;
+   }
+   cursor: pointer;
+}
+.inactive-time{
+   background-color: rgba(241, 121, 147, 0.76);
+}
+
+
+
+ .times{
+    width: 100%;
+    height: 0;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: .5em;
+    }
+    
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    }
+    table{
+      width: 98%;
+      #hour{
+        width: 85%;
+      }
+      td{
+        padding: .5em;
+        font-size: 1em;
+        border: 1px solid rgb(211, 212, 212);
+      }
+    }
+ }
+
+
+/****************************RESPONSIVE*************************/
+
+@media (min-width: 375px) {
+
+  #wellcome{
+    h1{
+      font-size: 18px;
+    }
+  }
+  .login-panel{
+  width: 100%;
+
+  }
+
+  .banner{
+  margin-top: 1.8em;
+
+  }
+  .img-box-1 {
+    img{
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .profile{
+    img{
+      width: 60px;
+      height: 60px;
+    }}
+ 
+  }
+  .add-btn {
+    bottom: 1em;
+  }
+ 
+@media (min-width: 576px) {
+
+ }
+
+@media (min-width: 768px) {
+
+  
+  #wellcome{
+    h1{
+      font-size: 36px;
+    }
+  }
+  .login-panel{
+    width: 30%;
+  
+    }
+  .banner{
+  margin-top: 3em;
+
+  }
+  .img-box-1 {
+    img{
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+
+  .profile{
+    img{
+      width: 60px;
+      height: 60px;
+    }}
+ }
+
+@media (min-width: 992px) { 
+  .login-panel{
+    width: 25%;
+  
+    }
+   
+ }
+
+@media (min-width: 1200px) { 
+  
+}
